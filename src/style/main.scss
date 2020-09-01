@@ -1,0 +1,16 @@
+// settings
+@import 'libs/_normalize';
+@import "settings/_fonts";
+@import "settings/_mixins";
+@import "settings/_common";
+
+// components
+@import '../components/header/header';
+@import '../components/hero/hero';
+@import '../components/services/services';
+@import '../components/info/info';
+@import '../components/gallery/gallery';
+@import '../components/reviews/reviews';
+@import '../components/map/map';
+@import '../components/story/story';
+@import '../components/footer/footer';

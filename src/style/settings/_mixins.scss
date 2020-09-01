@@ -1,0 +1,31 @@
+$mainBtnColor: #F68257;
+$primaryColor: #07BBA4;
+$secondaryColor: #45CCBB;
+$bRadius: 6px;
+@mixin btnBorder ($width, $color) {
+	border: $width solid $color;
+}
+@mixin mainShadow {
+	box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.06);
+}
+@mixin forecastShadow {
+	box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+@mixin expertShadow {
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.06);
+}
+@mixin r($width) {
+	@media screen and (max-width:$width+"px") {
+		@content
+	}
+}
+@mixin textSize($fontSize, $fontWeight, $lineHeight) {
+	font-size: $fontSize;
+	font-weight: $fontWeight;
+	line-height: $lineHeight;
+}
+@mixin rm($width) {
+	@media screen and (min-width:$width+"px") {
+		@content
+	}
+}
