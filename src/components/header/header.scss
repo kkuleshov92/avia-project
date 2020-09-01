@@ -1,0 +1,35 @@
+.header {
+    
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        padding: 50px 20px;
+        font-size: 16px;
+        color: #212944;
+        font-weight: 400;
+
+        &:hover {
+            background: #68a4ff;
+            color: #fefefe;
+        }
+    }
+
+    &__network {
+        font-size: 24px;
+    }
+
+    &__phone {
+        font-weight: 700;
+        color: #212944;
+        font-size: 20px;
+    }
+}
