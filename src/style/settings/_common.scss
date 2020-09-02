@@ -13,18 +13,19 @@ p {
 
 h2 {
 	position: relative;
+	&::after {
+		content: '';
+		bottom: -20px;
+		left: 50%;
+		transform: translateX(-50%);
+		position: absolute;
+		width: 103px;
+		background: #68a4ff;
+		height: 5px;
+	}
 }
 
-h2::after {
-	content: '';
-    bottom: -20px;
-	left: 50%;
-	transform: translateX(-50%);
-    position: absolute;
-    width: 103px;
-    background: #68a4ff;
-    height: 5px;
-}
+
 
 .container {
 	width: 100%;
