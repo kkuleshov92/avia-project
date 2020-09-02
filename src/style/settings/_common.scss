@@ -20,8 +20,19 @@ p {
 
 h2 {
 	position: relative;
+	&::after {
+		content: '';
+		bottom: -20px;
+		left: 50%;
+		transform: translateX(-50%);
+		position: absolute;
+		width: 103px;
+		background: #68a4ff;
+		height: 5px;
+	}
 }
 
+<<<<<<< HEAD
 h2::after {
 	content: '';
     bottom: -20px;
@@ -44,6 +55,9 @@ h2::after {
 		bottom: -5px;	
 	}
 }
+=======
+
+>>>>>>> 5c53903074e3471fd338a463c22c04537ce55414
 
 .container {
 	width: 100%;

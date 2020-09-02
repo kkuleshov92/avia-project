@@ -1,16 +1,19 @@
 .hero {
     background: url(../img/hero/hero-bg.jpg)no-repeat center center / cover;
     padding-top: 125px;
+    padding-bottom: 40px;
     min-height: 735px;
     margin-top: 120px;
-
-    .container {
-        position: relative;
-    }
+    position: relative;
 
     &__title {
         font-size: 65px;
         margin-bottom: 10px;
+        line-height: 1.5;
+
+        &::after {
+            display: none;
+        }
     }
 
     &__item {
@@ -31,13 +34,120 @@
         cursor: pointer;
         position: absolute;
         top: 50%;
+        transition: .3s ease;
+        z-index: 1;
+
+        &.slick-disabled {
+            background-color: rgba(255, 255, 255, .4);
+        }
 
         &_prev {
+            left: calc(50% - 615px);
             transform: translateY(-50%);
         }
 
         &_next {
+            right: calc(50% - 615px);
             transform: translateY(-50%);
+        }
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+
+    &__btn {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1250px) {
+    .hero {
+        &__slider-btn {
+            &_prev {
+                left: 10px;
+            }
+
+            &_next {
+                right: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero {
+        margin-top: 60px;
+
+        &__title {
+            font-size: 60px;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .hero {
+        margin-top: 60px;
+
+        &__text {
+            position: relative;
+            padding: 10px;
+            margin: 0 40px 20px;
+            background: rgba(255, 255, 255, .6);
+        }
+
+        &__slider-btn {
+            width: 35px;
+            height: 35px;
+            background-size: 15px;
+
+            &_prev {
+                border-radius: 15px 15px 0 15px;
+            }
+    
+            &_next {
+                border-radius: 0 15px 15px 15px;
+            }
+        }
+
+        &__title {
+            font-size: 55px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 85px;
+        min-height: auto;
+        &__title {
+            font-size: 45px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 479px) {
+    .hero {
+        &__title {
+            font-size: 35px;
+        }
+
+        &__slider-btn {
+            &_prev {
+                left: 5px;
+            }
+    
+            &_next {
+                right: 5px;
+            }
+        }
+
+        &__text {
+            margin: 0 30px 20px;
         }
     }
 }
