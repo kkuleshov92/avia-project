@@ -1,0 +1,19 @@
+.slider {
+    &-btn {
+        height: 58px;
+        width: 58px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 20px;
+
+        &_prev {
+            background-image: url(../img/global/slider-btn-prev.svg);
+            border-radius: 20px 20px 0 20px;
+        }
+
+        &_next {
+            background-image: url(../img/global/slider-btn-next.svg);
+            border-radius: 0 20px 20px 20px;
+        }
+    }
+}

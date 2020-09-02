@@ -1,11 +1,43 @@
 .hero {
     background: url(../img/hero/hero-bg.jpg)no-repeat center center / cover;
-    padding-top: 230px;
-    padding-bottom: 300px;
+    padding-top: 125px;
+    min-height: 735px;
+    margin-top: 120px;
+
+    .container {
+        position: relative;
+    }
+
+    &__title {
+        font-size: 65px;
+        margin-bottom: 10px;
+    }
 
     &__item {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    &__text {
+        padding: 0 105px;
+        font-size: 18px;
+        margin-bottom: 35px;
+        text-align: center;
+    }
+
+    &__slider-btn {
+        background-color: #fff;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+
+        &_prev {
+            transform: translateY(-50%);
+        }
+
+        &_next {
+            transform: translateY(-50%);
+        }
     }
 }
