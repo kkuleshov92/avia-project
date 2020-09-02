@@ -1,34 +1,6 @@
 .info {
 
-    padding-top: 85px;
-
-}
-
-
-@media (max-width: 1200px) {
-    .info {
-
-    }
-}
-
-@media (max-width: 1023px) {
-    .info {
-
-    }
-}
-
-@media (max-width: 768px) {
-    .info {
-
-    }
-}
-@media (max-width: 639px) {
-    .info {
-
-    }
-}
-@media (max-width: 480px) {
-    .info {
-
-    }
+   @media (min-width: 1024px) {
+       padding: 85px 0 95px;
+   }
 }

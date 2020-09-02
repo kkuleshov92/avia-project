@@ -2,7 +2,9 @@
     background: url(../img/global/sky.jpg) no-repeat center top/cover;
 
     &__title {
-        margin-bottom: 85px;
+        @media (min-width: 1024px) {
+        margin-bottom: 100px;
+    }
     }
 
     &__wrap {
@@ -26,28 +28,49 @@
 
 @media (max-width: 1200px) {
     .map {
-
+        &__content {
+            width: 53%;
+        }
+        &__img {
+            max-width: 45%;
+        }
     }
 }
 
 @media (max-width: 1023px) {
     .map {
-
+        &__content {
+            width: 63%;
+        }
+        &__img {
+            max-width: 35%;
+        }
     }
 }
 
 @media (max-width: 768px) {
     .map {
-
+        &__content {
+            width: 100%;
+        }
+        &__img {
+            display: none;
+        }
     }
 }
+
 @media (max-width: 639px) {
     .map {
-
+        &__text {
+            margin-bottom: 15px; 
+        }
     }
 }
+
 @media (max-width: 480px) {
     .map {
-
+        &__text {
+            margin-bottom: 10px;
+        }       
     }
 }
