@@ -2,4 +2,53 @@
 
     background: url(../img/global/sky.jpg) no-repeat center top/cover;
     padding: 85px 0 55px;
+
+    &____wrap {
+        
+
+    }
+
+    &__filter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    &__name {
+        font-weight: 700;
+        margin-right: 20px;
+    }
+
+    &__item {
+        background: transparent;
+        border-radius: 17.5px;
+        line-height: 29px;
+        padding: 1px 20px 1px;
+        font-weight: normal;
+        border: 2px solid transparent;
+    }
+
+    &__item:hover {
+
+        transform: scale(1.05);
+        border: 2px solid #9abff7;
+        box-shadow: 0 0 25px #b0cffd inset;
+    }
+
+    &__item:active {
+        color: #68a4ff;
+        border: 2px solid #68a4ff;
+    }
+
+    &__photo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__img {
+        flex-basis: 370px;
+        margin-bottom: 20px;
+    }
 }

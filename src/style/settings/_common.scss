@@ -29,9 +29,24 @@ h2:after {
 }
 
 .btn {
-	color: #F2F2F2;
+	color: #fff;
+	font-family: 'Bebas Neue', sans-serif;
+	text-transform: uppercase;
+	font-size: 24px;
+	line-height: 18.5px;
+	letter-spacing: 0.02em;
+	text-align: center;
+	background-color: #68a4ff;
+	border-radius: 27.5px;
+	display: block;
+	cursor: pointer
+	max-width: 177px;
+}
+
+.btn:hover {
 
 }
+
 .title {
 	font-family: 'Bebas Neue', sans-serif;
 	font-weight: 700;
