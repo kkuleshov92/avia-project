@@ -1,0 +1,53 @@
+.map {
+    background: url(../img/global/sky.jpg) no-repeat center top/cover;
+
+    &__title {
+        margin-bottom: 85px;
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {
+        width: 480px;
+    }
+
+    &__text {
+        margin-bottom: 25px;
+    }
+
+    &__img {
+        max-width: 877px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .map {
+
+    }
+}
+
+@media (max-width: 1023px) {
+    .map {
+
+    }
+}
+
+@media (max-width: 768px) {
+    .map {
+
+    }
+}
+@media (max-width: 639px) {
+    .map {
+
+    }
+}
+@media (max-width: 480px) {
+    .map {
+
+    }
+}

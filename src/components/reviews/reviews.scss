@@ -1,0 +1,46 @@
+.reviews {
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;  
+    }
+
+    &__img{
+        flex-basis: 370px;
+    }
+
+    &__text {
+        width: 770px;
+        display: flex;
+        align-items: center
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .reviews {
+
+    }
+}
+
+@media (max-width: 1023px) {
+    .reviews {
+
+    }
+}
+
+@media (max-width: 768px) {
+    .reviews {
+
+    }
+}
+@media (max-width: 639px) {
+    .reviews {
+
+    }
+}
+@media (max-width: 480px) {
+    .reviews {
+
+    }
+}

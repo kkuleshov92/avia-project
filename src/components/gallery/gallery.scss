@@ -1,7 +1,7 @@
 .gallery {
 
     background: url(../img/global/sky.jpg) no-repeat center top/cover;
-    padding: 85px 0 55px;
+    padding: 85px 0 85px;
 
     &____wrap {
         
@@ -50,5 +50,37 @@
     &__img {
         flex-basis: 370px;
         margin-bottom: 20px;
+    }
+
+    &__btn {
+        margin: 30px auto 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .gallery {
+
+    }
+}
+
+@media (max-width: 1023px) {
+    .gallery {
+
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery {
+
+    }
+}
+@media (max-width: 639px) {
+    .gallery {
+
+    }
+}
+@media (max-width: 480px) {
+    .gallery {
+
     }
 }
