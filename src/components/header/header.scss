@@ -1,21 +1,39 @@
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 10;
     
     &__box {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+    }
+
+    &__menu-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+
+    &__logo {
+        margin-right: 30px;
     }
 
     &__nav {
         display: flex;
         align-items: center;
+        margin-right: 25px;
     }
 
     &__link {
-        padding: 50px 20px;
+        padding: 55px 20px;
         font-size: 16px;
         color: #212944;
         font-weight: 400;
+        transition: .3s ease;
 
         &:hover {
             background: #68a4ff;
@@ -23,13 +41,182 @@
         }
     }
 
+    &__social {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+    }
+
     &__network {
-        font-size: 24px;
+        font-size: 0px;
+        margin-right: 10px;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s ease;
+
+        &_last {
+            margin-right: 0;
+        }
+
+        &:hover {
+            opacity: .7;
+        }
     }
 
     &__phone {
         font-weight: 700;
         color: #212944;
         font-size: 20px;
+        display: flex;
+        align-items: center;
+        transition: .3s ease;
+
+        img {
+            margin-right: 10px;
+        }
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+
+    &__bars {
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        display: none;
+        position: relative;
+
+        .bars {
+            display: block;
+            background: #000;
+            height: 2px;
+            width: 24px;
+            position: absolute;
+            left: 7px;
+            transition: .3s ease;
+            transform-origin: 0 0;
+        }
+
+        .bars__1 {
+            top: calc(50% - 12px);
+        }
+
+        .bars__2 {
+            top: calc(50% - 1px);
+        }
+
+        .bars__3 {
+            top: calc(50% + 10px);
+        }
+
+        &.is-active {
+            .bars__1 {
+                transform: rotate(45deg);
+                width: 31px;
+            }
+
+            .bars__2 {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            .bars__3 {
+                transform: rotate(-45deg);
+                width: 31px;
+            }
+        }
+
+        @media (max-width: 1023px) {
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .header {
+
+        &__link {
+            padding: 45px 10px;
+        }
+
+        &__logo {
+            width: 100%;
+            max-width: 170px;
+            margin-right: 15px;
+        }
+
+        &__nav {
+            margin-right: 0;
+        }
+
+        &__social {
+            margin: 0;
+        }
+
+        &__phone {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .header {
+        &__box {
+            padding: 20px 0;
+            justify-content: space-between;
+            background: #fff;
+        }
+
+        &__menu-wrapper {
+            position: fixed;
+            left: 0;
+            top: -300%;
+            width: 100%;
+            height: 100%;
+            transition: .3s ease;
+            z-index: -1;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 105px;
+            padding-bottom: 30px;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            overflow-y: scroll;
+            background: #fff;
+
+            @media (max-height: 415px) {
+                justify-content: flex-start;
+            }
+
+            &.is-active {
+                top: 0;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        &__nav {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        &__link {
+            padding: 10px 0;
+
+            &:hover {
+                color: #000;
+                background: none;
+            }
+        }
+
+        &__phone {
+            margin-bottom: 20px;
+        }
     }
 }
