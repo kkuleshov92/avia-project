@@ -9,11 +9,19 @@
         &_prev {
             background-image: url(../img/global/slider-btn-prev.svg);
             border-radius: 20px 20px 0 20px;
+
+            &_blue {
+                background-image: url(../img/global/slider-btn-prev_white.svg);
+            }
         }
 
         &_next {
             background-image: url(../img/global/slider-btn-next.svg);
             border-radius: 0 20px 20px 20px;
+
+            &_blue {
+                background-image: url(../img/global/slider-btn-next_white.svg);
+            }
         }
     }
 }
