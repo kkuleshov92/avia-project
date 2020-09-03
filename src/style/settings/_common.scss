@@ -114,6 +114,17 @@ h2::after {
 			background: #68a4ff;
 		}
 	}
+
+	&_grey {
+		color: #565656;
+        background-color: #fff;
+		border: 2px solid #565656;
+		
+		&:hover {
+			background-color: #565656;
+			color: #fff;
+		}
+	}
 }
 
 .title {
