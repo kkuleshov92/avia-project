@@ -31,6 +31,10 @@
     &__img {
         font-size: 0;
         margin-bottom: 15px;
+
+        img {
+            width: 100%;   
+        }
     }
 
     &__btn_call {
@@ -86,12 +90,10 @@
     
             &_prev {
                 left: 5px;
-                transform: translateY(-50%);
             }
     
             &_next {
                 right: 5px;
-                transform: translateY(-50%);
             }
     
             &:hover {
@@ -149,11 +151,11 @@
 @media (max-width: 1023px) {
     .services {
         &__item {
-            max-width: auto;
+            max-width: 100%;
         }
 
         &__wrap {
-            
+            width: calc(100% - 80px);
         }
 
         &__slider-btn {
@@ -167,6 +169,58 @@
 
             &_next {
                 border-radius: 0 15px 15px 15px;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        &__text {
+            padding: 0;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .services {
+        &__item {
+            margin: 0 50px;
+            width: 340px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .services {
+        padding-bottom: 100px;
+
+        &__item {
+            width: auto;
+            max-width: 290px;
+        }
+
+        &__wrap {
+            width: 100%;
+        }
+
+        &__slider-btn {
+            top: auto;
+            bottom: 25px;
+            width: 50px;
+            height: 50px;
+            transform: none;
+
+            &_prev {
+                left: auto;
+                right: calc(50% + 10px);
+            }
+
+            &_next {
+                right: auto;
+                left: calc(50% + 10px);
             }
         }
     }

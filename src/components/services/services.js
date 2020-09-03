@@ -24,5 +24,10 @@ $('.services__wrap').slick({
             centerMode: false,
             centerPadding: '0px',
         }
+    },{
+        breakpoint: 640,
+        settings: {
+            slidesToShow: 1
+        }
     }]
 })
