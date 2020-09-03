@@ -115,14 +115,14 @@ h2::after {
 		}
 	}
 
-	&_grey {
-		color: #565656;
-        background-color: #fff;
+	&_black {
 		border: 2px solid #565656;
-		
+		background-color: #fff;
+		color: #565656;
+
 		&:hover {
-			background-color: #565656;
 			color: #fff;
+			background: #565656;
 		}
 	}
 }
