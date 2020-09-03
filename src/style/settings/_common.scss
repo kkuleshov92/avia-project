@@ -86,7 +86,7 @@ h2::after {
 	text-transform: uppercase;
 	font-size: 24px;
 	padding: 19px 0;
-	line-height: 18.5px;
+	line-height: 0.77em;
 	letter-spacing: 0.02em;
 	text-align: center;
 	background-color: #68a4ff;
@@ -97,7 +97,7 @@ h2::after {
 }
 
 .btn:hover {
-
+	background-color: #2f82ff;
 }
 
 .title {
@@ -128,4 +128,8 @@ h2::after {
 		font-size: 35px;
 		margin-bottom: 25px;
 	}
+}
+
+.back-white {
+	background-color: #fff;
 }

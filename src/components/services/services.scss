@@ -1,0 +1,53 @@
+.services {
+    background: url(../img/global/sky.jpg) no-repeat center top/cover;
+    @media (min-width: 1024px) {
+        padding: 85px 0 100px;
+    }
+
+    &__title {
+        @media (min-width: 1024px) {
+            margin-bottom: 70px;
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        background-color: #fff;
+        width: 370px;
+    }
+
+    &__img {
+
+    }
+
+    &__text {
+        padding: 8px 20px 25px;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px 35px;
+    }
+
+    &__btn {
+    }
+
+    &__btn_call {
+        width: 157px;
+        padding: 19px 0 15px;
+    }
+
+    &__btn_details {
+        padding: 17px 0 16px;
+        width: 147px;
+        color: #565656;
+        background-color: #fff;
+        border: 2px solid #565656;
+    }
+
+}

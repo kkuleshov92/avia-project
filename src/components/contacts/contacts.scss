@@ -1,0 +1,63 @@
+.contacts {
+    background-color: #000;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        width: 430px;
+    }
+
+    &__item {
+
+    }
+
+    &__name {
+
+    }
+
+    &__link {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+    }
+
+    &__box {
+        width: 650px;
+    }
+
+    &__title {
+
+    }
+}
+
+.form {
+
+    &__label {
+
+    }
+
+    &__input {
+
+    }
+
+    &__box {
+
+    }
+
+    &__btn {
+
+    }
+
+    
+    &__btn_send {
+        
+    }
+
+    
+    &__btn_call {
+        
+    }
+}
