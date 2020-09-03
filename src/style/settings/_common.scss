@@ -94,10 +94,26 @@ h2::after {
 	display: block;
 	cursor: pointer;
 	width: 177px;
-}
+	transition: .3s ease;
+	border: 2px solid #68a4ff;
 
-.btn:hover {
-	background-color: #2f82ff;
+	
+
+	&:hover {
+		color: #68a4ff;
+		background: #fff;
+	}
+
+	&_white {
+		border: 2px solid #68a4ff;
+		background-color: #fff;
+		color: #68a4ff;
+
+		&:hover {
+			color: #fff;
+			background: #68a4ff;
+		}
+	}
 }
 
 .title {

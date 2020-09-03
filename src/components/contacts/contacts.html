@@ -24,30 +24,30 @@
                 <h2 class="contacts__title title">
                     Заголовок н2
                 </h2>
-                <form class="contacts__connect form">
+                <form class="contacts__connect form" method="POST" action="#">
                     <div class="form__wrap">
                         <div class="form__info">
                             <label class="form__label" for="name"> Имя: </label>
-                            <input type="text" class="form__input" placeholder="Ваш телефон" name="name" required>  
+                            <input type="text" class="form__input" placeholder="Ваше имя" name="name" id="name" required>  
                         </div>
                         <div class="form__info">
                             <label class="form__label" for="phone"> Телефон: </label>
-                            <input type="tel" class="form__input " placeholder="Ваш телефон" name="phone" required>
+                            <input type="tel" class="form__input " placeholder="Ваш телефон" name="phone" id="phone" required>
                         </div>
                         <div class="form__info">
-                            <label class="form__label" for="E-mail"> Email: </label>
-                            <input type="email" class="form__input" placeholder="Ваш телефон" name="E-mail" required>
+                            <label class="form__label" for="email"> Email: </label>
+                            <input type="email" class="form__input" placeholder="Ваша почта" name="email" id="email" required>
                         </div>
                         <div class="form__info">
                             <label class="form__label " for="message"> Сообщение: </label>
-                            <textarea type="text" class="form__input form__input_height" placeholder="Сообщение" name="message" rows = "5" cols = "50"></textarea>
+                            <textarea class="form__input form__input_textarea" placeholder="Сообщение" name="message" id="message"></textarea>
                         </div>
                     </div>
                     <div class="form__box">
-                        <button type="submit" class="form__btn form__btn_send btn">
+                        <button class="form__btn form__btn_send btn">
                             отправить
                         </button>
-                        <a href="tel:+38093322330" class="form__btn form__btn_call btn">позвонить</a>
+                        <a href="tel:+38093322330" class="form__btn form__btn_call btn btn_white">позвонить</a>
                     </div>
 				</form> 
             </div>

@@ -1,6 +1,6 @@
 .hero {
     background: url(../img/hero/hero-bg.jpg)no-repeat center center / cover;
-    padding-top: 125px;
+    padding-top: 120px;
     padding-bottom: 40px;
     min-height: 735px;
     margin-top: 120px;
@@ -9,7 +9,7 @@
     &__title {
         font-size: 65px;
         margin-bottom: 10px;
-        line-height: 1.5;
+        line-height: 1;
 
         &::after {
             display: none;
