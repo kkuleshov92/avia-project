@@ -7,3 +7,6 @@
 //=include '../components/map/map.js'
 //=include '../components/story/story.js'
 //=include '../components/footer/footer.js'
+//=include '../components/info-white/info-white';
+//=include '../components/contacts/contacts';
+//=include '../components/country-map/country-map';

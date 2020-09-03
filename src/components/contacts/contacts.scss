@@ -1,5 +1,8 @@
 .contacts {
-    background-color: #000;
+    @media (min-width: 1024px) {
+        padding: 85px 0 90px;
+    }
+
 
     &__wrap {
         display: flex;
@@ -8,47 +11,90 @@
 
     &__info {
         width: 430px;
+        margin: auto 0;
     }
 
     &__item {
-
+        margin-bottom: 25px;
+        display: flex;
     }
 
     &__name {
-
+        font-size: 20px;
+        width: 100px;
+        display: block;
     }
 
     &__link {
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         font-size: 32px;
+        color: #212944;
+    }
+
+    &__link_address {
+        font-size: 22px;
     }
 
     &__box {
         width: 650px;
+        border-top: 10px solid #68a4ff;
+        background-color: #fff;
+        padding: 50px 65px 50px 55px;
+        border-bottom-right-radius: 50px;
     }
 
     &__title {
+        margin-bottom: 25px;
+    }
 
+    &__title:after {
+        display: none;
     }
 }
 
 .form {
+    line-height: 1.345em;
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        align-items: baseline;
+    }
 
     &__label {
-
+        font-weight: bold;
+        font-size: 20px;
     }
 
     &__input {
+        font-size: 15px;
+        width: 357px;
+        border-radius: 40px;
+        background-color: #f8f8f8;
+        border: 1px solid #dedede;
+        height: 40px;
+        padding: 38px 38px 40px;
+    }
 
+    &__input_height {
+        padding: 30px 38px 148px;
     }
 
     &__box {
-
+        display: flex;
+        justify-content: space-between;
+        margin-top: 45px;
     }
 
     &__btn {
-
+        width: 255px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 23px;
+        font-weight: 900;
+        padding: 32px 0;
+        border-radius: 50px;
     }
 
     
@@ -58,6 +104,8 @@
 
     
     &__btn_call {
-        
+        border: 2px solid #68a4ff;
+        background-color: #fff;
+        color: #68a4ff;
     }
 }
