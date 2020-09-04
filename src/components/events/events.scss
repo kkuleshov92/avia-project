@@ -1,7 +1,7 @@
 .events {
     background: url(../img/global/sky.jpg) no-repeat center top/cover;
     @media (min-width: 1024px) {
-        padding: 100px 0 100px;
+        padding: 100px 0 145px;
     }
 
     &__title {
@@ -21,22 +21,23 @@
         width: 370px;
         min-width: 370px;
         padding: 10px 10px 35px;
-        margin: 0 15px;
+        margin-bottom: 35px;
     }
 
     &__text {
-        padding: 10px 10px 25px;
+        padding: 0 10px 25px;
     }
 
     &__box {
         display: flex;
         justify-content: space-between;
         padding: 0 10px;
+        align-items: center;
     }
 
     &__img {
         font-size: 0;
-        margin-bottom: 15px;
+        margin-bottom: 25px;
 
         img {
             width: 100%;   
@@ -55,30 +56,6 @@
     }
 }
 
-@media (max-width: 1350px) {
-    .events {
-        &__wrap {
-            width: 1020px;
-            margin: 0 auto;
-        }
-
-        &__item {
-            width: 320px;
-            min-width: 320px;
-        }
-
-        &__btn_call {
-            width: 145px;
-            padding: 19px 0 15px;
-            font-size: 20px;
-        }
-    
-        &__btn_details {
-            width: 140px;
-            font-size: 20px;
-        }
-    }
-}
 
 @media (max-width: 1200px) {
     .events {
@@ -87,28 +64,20 @@
             max-width: 320px;
         }
 
-        &__wrap {
-            width: calc(100% - 140px);
-        }
-
         &__box {
             flex-direction: column;
             align-items: center;
             display: flex;
         }
 
-        &__text {
-            padding-bottom: 20px;
+        &__date {
+            margin-bottom: 20px;
         }
 
         &__btn {
             margin-bottom: 15px;
             width: 100%;
             max-width: 170px;
-
-            &_details {
-                margin: 0;
-            }
         }
     }
     
@@ -116,19 +85,18 @@
 
 @media (max-width: 1023px) {
     .events {
-        &__item {
-            max-width: 100%;
-        }
-
-        &__wrap {
-            width: calc(100% - 80px);
-        }
 
         &__text {
             padding: 0;
             margin-bottom: 20px;
             font-size: 14px;
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .events {
+
     }
 }
 
