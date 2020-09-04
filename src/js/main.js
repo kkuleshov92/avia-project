@@ -10,3 +10,4 @@
 //=include '../components/info-white/info-white';
 //=include '../components/contacts/contacts';
 //=include '../components/country-map/country-map';
+//=include '../components/events/events';
