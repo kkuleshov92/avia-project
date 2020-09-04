@@ -25,20 +25,21 @@
         padding: 1px 20px 1px;
         font-weight: normal;
         border: 2px solid transparent;
+        cursor: pointer;
+        transition: .3s ease;
+        border: 2px solid transparent;
+        &:hover {
+            color: rgba(33, 41, 68, .5);
+        }
+
+        &.is-active {
+            border: 2px solid #9abff7;
+            box-shadow: 0 0 25px #b0cffd inset;
+            pointer-events: none;
+        }
+
+
     }
-
-    &__item:hover {
-
-        transform: scale(1.05);
-        border: 2px solid #9abff7;
-        box-shadow: 0 0 25px #b0cffd inset;
-    }
-
-    &__item:active {
-        color: #0c0d0f;
-        border: 2px solid #68a4ff;
-    }
-
     &__photo {
         display: flex;
         flex-wrap: wrap;
