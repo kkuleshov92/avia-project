@@ -11,3 +11,4 @@
 //=include '../components/contacts/contacts';
 //=include '../components/country-map/country-map';
 //=include '../components/events/events';
+//=include '../components/description/description';
