@@ -104,6 +104,14 @@
         }
         &__name {
             margin-right: 0;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        &__filter {
+            display: flex;
+            flex-wrap: wrap;
         }
     }
 }
