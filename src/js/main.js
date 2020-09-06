@@ -12,3 +12,5 @@
 //=include '../components/country-map/country-map';
 //=include '../components/events/events';
 //=include '../components/description/description';
+//=include '../components/feedback/feedback';
+//=include '../components/question/question';

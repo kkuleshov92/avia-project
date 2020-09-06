@@ -1,0 +1,143 @@
+.question {
+    @media (min-width: 1024px) {
+        padding: 125px 0 115px;
+    }
+
+    &__box {
+        width: 100%;
+        border-top: 10px solid #68a4ff;
+        background-color: #fff;
+        padding: 50px 85px 50px 85px;
+        border-bottom-right-radius: 50px;
+    }
+
+    &__title {
+        margin-bottom: 25px;
+    }
+
+    &__title:after {
+        display: none;
+    }
+}
+
+.question {
+    line-height: 1.345em;
+    padding-right: 15px;
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        align-items: baseline;
+    }
+
+    &__label {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    &__input {
+        font-size: 15px;
+        width: 80%;
+        border-radius: 40px;
+        background-color: #f8f8f8;
+        border: 1px solid #dedede;
+        height: 80px;
+        padding: 0 40px;
+        transition: .3s ease;
+
+        &:focus {   
+            border: 1px solid #999;
+        }
+    }
+
+    &__input_textarea {
+        padding: 30px 35px;
+        min-height: 180px;
+        resize: none;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 45px;
+    }
+
+    &__btn {
+        width: 300px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 23px;
+        font-weight: 900;
+        padding: 25px 0;
+        border-radius: 50px;
+        margin-left: auto;
+        line-height: 1.17em;
+    }
+
+    &__wrap {
+        margin-bottom: 45px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .question {
+        &__box {
+            padding: 50px;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .question {
+        &__box {
+            padding: 30px 20px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .question {
+        &__label {
+            font-size: 18px;
+        }
+        &__input {
+            width: 75%;
+        }
+        &__btn {
+            font-size: 20px;
+            width: 250px;
+        }
+    }
+    
+}
+@media (max-width: 639px) {
+    .question {
+        &__label {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        &__input {
+            height: 65px;
+            width: 100%;
+        }
+        &__info {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        &__btn {
+            width: 50%;
+            font-size: 18px;
+            margin: 0 auto;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .question {
+        &__box {
+            padding: 20px 5px;
+        }
+    }  }
+    }
+}

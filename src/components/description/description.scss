@@ -1,38 +1,16 @@
 .description {
-    background: url(../img/global/sky.jpg) no-repeat center top/cover;
     @media (min-width: 1024px) {
-        padding: 100px 0 145px;
+        padding: 90px 0 145px;
     }
 
     &__title {
         @media (min-width: 1024px) {
-            margin-bottom: 70px;
+            margin-bottom: 50px;
         }
     }
 
-    &__wrap {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    &__item {
-        background-color: #fff;
-        width: 370px;
-        min-width: 370px;
-        padding: 10px 10px 35px;
-        margin-bottom: 35px;
-    }
-
     &__text {
-        padding: 0 10px 25px;
-    }
-
-    &__box {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 10px;
-        align-items: center;
+        margin-bottom: 25px;
     }
 
     &__img {
@@ -44,109 +22,13 @@
         }
     }
 
-    &__date {
-        font-family: 'Bebas Neue', sans-serif;
-        font-size: 24px;
-        width: 90px;
-    }
-
-    &__btn {
-        width: 187px;
-        padding: 16px 0;
-    }
-}
-
-
-@media (max-width: 1200px) {
-    .events {
-        &__item {
-            min-width: auto;
-            max-width: 320px;
-        }
-
-        &__box {
-            flex-direction: column;
-            align-items: center;
-            display: flex;
-        }
-
-        &__date {
-            margin-bottom: 20px;
-        }
-
-        &__btn {
-            margin-bottom: 15px;
-            width: 100%;
-            max-width: 170px;
-        }
-    }
-    
 }
 
 @media (max-width: 1023px) {
-    .events {
+    .description {
 
         &__text {
-            padding: 0;
             margin-bottom: 20px;
-            font-size: 14px;
-        }
-
-        &__item {
-            min-width: auto;
-            max-width: 100%;
-            width: 48%;
         }
     }
 }
-
-@media (max-width: 768px) {
-    .events {
-        &__text {
-            margin-bottom: 15px;
-        }
-
-        &__date {
-            font-size: 22px;
-            margin-bottom: 15px;
-        }
-
-        &__btn {
-            font-size: 22px;
-        }  
-    }
-}
-
-@media (max-width: 640px) {
-    .events {
-        &__date {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-
-        &__btn {
-            font-size: 20px;
-        } 
-    }
-}
-
-@media (max-width: 479px) {
-    .events {
-        padding-bottom: 100px;
-
-        &__item {
-            width: auto;
-            max-width: 290px;
-        }
-
-        &__wrap {
-            width: 100%;
-        }
-    }
-}
-
-/* 
-&__item {
-    margin: 0 50px;
-    width: 340px;
-} */

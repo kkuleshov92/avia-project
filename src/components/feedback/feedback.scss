@@ -1,51 +1,13 @@
-.contacts {
+.feedback {
     @media (min-width: 1024px) {
-        padding: 85px 0 90px;
-    }
-
-
-    &__wrap {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__info {
-        width: 430px;
-        margin: auto 0;
-    }
-
-    &__item {
-        margin-bottom: 25px;
-        display: flex;
-        align-items: baseline;
-    }
-
-    &__name {
-        font-size: 20px;
-        min-width: 100px;
-    }
-
-    &__link {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-        font-size: 32px;
-        color: #212944;
-        transition: .3s ease;
-
-        &:hover {
-            opacity: .8;
-        }
-    }
-
-    &__link_address {
-        font-size: 22px;
+        padding: 125px 0 115px;
     }
 
     &__box {
-        width: 650px;
+        width: 100%;
         border-top: 10px solid #68a4ff;
         background-color: #fff;
-        padding: 50px 65px 50px 55px;
+        padding: 50px 85px 50px 85px;
         border-bottom-right-radius: 50px;
     }
 
@@ -58,7 +20,7 @@
     }
 }
 
-.form {
+.form-big {
     line-height: 1.345em;
 
     &__info {
@@ -75,7 +37,7 @@
 
     &__input {
         font-size: 15px;
-        width: 357px;
+        width: 80%;
         border-radius: 40px;
         background-color: #f8f8f8;
         border: 1px solid #dedede;
@@ -101,91 +63,64 @@
     }
 
     &__btn {
-        width: 255px;
+        width: 300px;
         font-family: 'Montserrat', sans-serif;
         font-size: 23px;
         font-weight: 900;
-        padding: 32px 0;
+        padding: 25px 0;
         border-radius: 50px;
+        margin-left: auto;
+        line-height: 1.17em;
+    }
+
+    &__wrap {
+        margin-bottom: 45px;
     }
 }
 
 
 @media (max-width: 1200px) {
-    .contacts {
-        &__link {
-            font-size: 28px;
-        }
-        &__link_address {
-            font-size: 21px;
-        }
+    .feedback {
         &__box {
-            padding: 50px 35px 50px;
-            width: 580px;
-        }
-    }
-    .form {
-        &__btn {
-            width: 235px;
-            font-size: 20px;
+            padding: 50px;
         }
     }
 }
 
 @media (max-width: 1023px) {
-    .contacts {
-        &__link {
-            font-size: 25px;
-        }
-        &__link_address {
-            font-size: 19px;
-        }
+    .feedback {
         &__box {
-            padding: 30px 20pxx;
+            padding: 30px 20px;
         }
-        &__wrap {
-            flex-direction: column;
-            align-items: center;
+    }
+    .form-big {
+        &__label {
+            font-size: 18px;
         }
-        &__info {
-            margin-bottom: 25px;
+        &__btn {
+            font-size: 21px;
+            width: 270px;
         }
     }
 }
 
 @media (max-width: 768px) {
-    .contacts {
-        &__link {
-            font-size: 23px;
-        }
-        &__link_address {
-            font-size: 16px;
-        }
-        &__info {
-            align-items: center;
-        }
-    }
-    .form {
+    .form-big {
         &__label {
             font-size: 18px;
+        }
+        &__input {
+            width: 75%;
+        }
+        &__btn {
+            font-size: 20px;
+            width: 250px;
         }
     }
     
 }
 @media (max-width: 639px) {
-    .contacts {
-        &__link {
-            font-size: 20px;
-        }
-        &__box {
-            width: 100%;
-        }
-        &__info {
-            margin-bottom: 20px;
-            width: 100%;
-        }
-    }
-    .form {
+    .form-big {
         &__label {
             font-size: 18px;
             margin-bottom: 15px;
@@ -200,29 +135,19 @@
             margin-bottom: 25px;
         }
         &__btn {
-            width: 45%;
+            width: 50%;
             font-size: 18px;
-            padding: 25px 0;
+            margin: 0 auto;
         }
     }
 }
 @media (max-width: 480px) {
-    .contacts {
-        &__link {
-            font-size: 18px;
-        }
+    .feedback {
         &__box {
             padding: 20px 5px;
         }
-        &__info {
-            margin-bottom: 15px;
-        }
     }
-    .form {
-        &__box {
-            flex-direction: column;
-            align-items: center;
-        }
+    .form-big {
         &__label {
             font-size: 16px;
         }
