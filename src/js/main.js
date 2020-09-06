@@ -14,3 +14,4 @@
 //=include '../components/description/description';
 //=include '../components/feedback/feedback';
 //=include '../components/question/question';
+//=include '../components/faq-slider/faq-slider';
