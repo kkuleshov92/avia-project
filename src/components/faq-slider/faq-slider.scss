@@ -1,0 +1,25 @@
+.faq-slider {
+    &__text {
+
+        p {
+            margin-bottom: 20px;
+        }
+        
+    }
+    
+
+    &__img-box {
+        background: #fff;
+        opacity: 0;
+        visibility: hidden;
+        
+        &.slick-active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        &.slick-center {
+            padding: 10px;
+        }
+    }
+}
