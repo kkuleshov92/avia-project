@@ -29,6 +29,8 @@
         &.is-active {
             .question {
                 &__icon {
+
+                    background: #3a64a2;
                     &::after {
                         opacity: 0;
                         visibility: hidden;
