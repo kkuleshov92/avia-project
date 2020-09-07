@@ -1,7 +1,7 @@
 .blog {
     background: url(../img/global/sky.jpg) no-repeat center top/cover;
     @media (min-width: 1024px) {
-        padding: 100px 0 55px;
+        padding: 100px 0 35px;
     }
 
     &__title {
@@ -34,6 +34,14 @@
         }
     }
 
+}
+
+@media (max-width: 1200px) {
+    .blog {
+        &__box {
+            width: 68%;
+        }
+    }
 }
 
 @media (max-width: 1023px) {
