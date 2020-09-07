@@ -63,12 +63,6 @@
 
 @media (max-width: 767px) {
     .blog {
-       &__wrap {
-           flex-direction: column;
-       }
-       &__box {
-        width: 100%;
-        }
     }
     
 }
@@ -76,8 +70,6 @@
 @media (max-width: 639px) {
     .blog {
         &__wrap {
-            flex-direction: column;
-            background-color: #000;
         }
         &__text {
             margin-bottom: 15px;

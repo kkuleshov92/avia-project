@@ -105,8 +105,7 @@
 
     .gallery-side {
         &__img {
-            flex-basis: 90px;
-            height: 90px;
+            flex-basis: 32%;
         }
     }
 
@@ -120,7 +119,7 @@
     .news {
         padding: 10px;
 
-        width: 50%;
+        width: 49%;
 
         &__subtitle {
             font-size: 19px;
@@ -133,40 +132,75 @@
         }
     }
 
+    .gallery-side__img {
+        flex-basis: 25%;
+    }
+
     .gallery-side {
         padding: 10px;
-        width: 50%;
+        width: 70%;
         order: 1;
     }
 
     .recommendations {
         padding: 10px;
-        width: 50%;
+        width: 49%;
     }
 
     .sidebar {
         width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         flex-wrap: wrap;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .sidebar {
-       width: 100%;
+        flex-direction: column;
+        align-items: center;
     }
-    
+
+    .gallery-side {
+        width: 90%;
+        order: 1;
+    }
+
+    .recommendations {
+        width: 90%;
+    }
+
+    .news {
+        width: 90%;
+    }
 }
 
 @media (max-width: 639px) {
     .recommendations {
-        
+        width: 100%;
+    }
+
+    .news {
+        width: 100%;
+    }
+    
+    .gallery-side {
+        width: 100%;
+
+        &__img {
+            flex-basis: 30%;
+        }
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
     .recommendations {
        
+    }
+
+    .news {
+        &__subtitle {
+            font-size: 16px;
+        }
     }
 }
