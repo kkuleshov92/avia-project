@@ -4,6 +4,7 @@
 @import "settings/_mixins";
 @import "settings/_common";
 @import "components/slider";
+@import "components/aside";
 
 // components
 @import '../components/header/header';
@@ -23,3 +24,4 @@
 @import '../components/feedback/feedback';
 @import '../components/question/question';
 @import '../components/faq-slider/faq-slider';
+@import '../components/blog/blog';

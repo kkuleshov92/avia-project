@@ -37,14 +37,7 @@
 
 }
 
-
-@media (max-width: 1200px) {
-    .reviews {
-
-    }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .reviews {
         &__item {
             flex-direction: column;
@@ -62,7 +55,7 @@
 
     }
 }
-@media (max-width: 480px) {
+@media (max-width: 479px) {
     .reviews {
 
     }

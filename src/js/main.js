@@ -15,3 +15,4 @@
 //=include '../components/feedback/feedback.js'
 //=include '../components/question/question.js'
 //=include '../components/faq-slider/faq-slider.js'
+//=include '../components/blog/blog.js'

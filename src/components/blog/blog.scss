@@ -1,12 +1,22 @@
-.description {
+.blog {
+    background: url(../img/global/sky.jpg) no-repeat center top/cover;
     @media (min-width: 1024px) {
-        padding: 90px 0 55px;
+        padding: 100px 0 55px;
     }
 
     &__title {
         @media (min-width: 1024px) {
-            margin-bottom: 50px;
+            margin-bottom: 80px;
         }
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__box {
+        width: 770px;
     }
 
     &__text {
@@ -15,7 +25,7 @@
 
     &__img {
         font-size: 0;
-        margin-bottom: 25px;
+        margin-bottom: 45px;
         padding: 10px;
         background-color: #fff;
 
@@ -27,7 +37,8 @@
 }
 
 @media (max-width: 1023px) {
-    .description {
+    .blog {
+
         &__text {
             margin-bottom: 20px;
         }
@@ -35,16 +46,16 @@
 }
 
 @media (max-width: 639px) {
-    .description {
+    .blog {
         &__text {
             margin-bottom: 15px;
         }
     }
 }
 @media (max-width: 479px) {
-    .description {
+    .blog {
         &__text {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
     }
 }

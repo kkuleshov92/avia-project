@@ -100,7 +100,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .events {
         &__text {
             margin-bottom: 15px;
@@ -117,7 +117,7 @@
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 639px) {
     .events {
         &__date {
             font-size: 20px;
@@ -142,9 +142,3 @@
         }
     }
 }
-
-/* 
-&__item {
-    margin: 0 50px;
-    width: 340px;
-} */
