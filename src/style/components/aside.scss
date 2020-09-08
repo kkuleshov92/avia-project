@@ -6,6 +6,7 @@
     background-color: #fff;
     padding: 20px 10px;
     margin-bottom: 35px;
+    box-shadow: 0 0 59px rgba(49, 99, 176, 0.3);
 
     &__img {
         font-size: 0;
@@ -30,6 +31,7 @@
     background-color: #fff;
     padding: 20px 10px;
     margin-bottom: 35px;
+    box-shadow: 0 0 59px rgba(49, 99, 176, 0.3);
 
     &__subtitle {
         font-size: 21px;
@@ -73,6 +75,7 @@
     background-color: #fff;
     padding: 20px 10px;
     margin-bottom: 35px;
+    box-shadow: 0 0 59px rgba(49, 99, 176, 0.3);
 
     &__block {
         display: flex;
@@ -118,8 +121,7 @@
 @media (max-width: 1023px) {
     .news {
         padding: 10px;
-
-        width: 49%;
+        max-width: 490px;
 
         &__subtitle {
             font-size: 19px;
@@ -138,13 +140,19 @@
 
     .gallery-side {
         padding: 10px;
-        width: 70%;
+        width: 100%;
+        max-width: 490px;
         order: 1;
+
+        &__img {
+            flex-basis: 110px;
+        }
+
     }
 
     .recommendations {
         padding: 10px;
-        width: 49%;
+        max-width: 490px;
     }
 
     .sidebar {
@@ -162,34 +170,27 @@
     }
 
     .gallery-side {
-        width: 90%;
         order: 1;
     }
 
     .recommendations {
-        width: 90%;
     }
 
     .news {
-        width: 90%;
     }
 }
 
 @media (max-width: 639px) {
     .recommendations {
-        width: 100%;
+        max-width: 370px;
     }
 
     .news {
-        width: 100%;
+        max-width: 370px;
     }
     
     .gallery-side {
-        width: 100%;
-
-        &__img {
-            flex-basis: 30%;
-        }
+        max-width: 370px;
     }
 }
 
@@ -202,5 +203,9 @@
         &__subtitle {
             font-size: 16px;
         }
+    }
+
+    .gallery-side {
+        max-width: 250px;
     }
 }
