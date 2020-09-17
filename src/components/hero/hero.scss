@@ -9,24 +9,10 @@
     background-position: center center;
     background-size: cover;
 
-    &_active-slide {
-        &_1 {
-            background-image: url(../img/hero/hero-bg.jpg);
-        }
-
-        &_2 {
-            background-image: url(../img/hero/hero-bg-2.jpg);
-        }
-
-        &_3 {
-            background-image: url(../img/hero/hero-bg-3.jpg);
-        }
-    }
-
     &__title {
         font-size: 65px;
         margin-bottom: 10px;
-        line-height: 1;
+        line-height: 1.3;
 
         &::after {
             display: none;

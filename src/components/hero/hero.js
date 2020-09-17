@@ -5,12 +5,27 @@ $('.hero__list').slick({
     dots: false
 })
 
+window.document.addEventListener('DOMContentLoaded', changeBgImg, document)
+
 $('.hero__list').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-    let heroSection = document.querySelector('.hero');
-
-    heroSection.classList.remove('hero_active-slide_1');
-    heroSection.classList.remove('hero_active-slide_2');
-    heroSection.classList.remove('hero_active-slide_3');
-
-    heroSection.classList.add(`hero_active-slide_${nextSlide + 1}`);
+    
+    changeBgImg('change', slick.$slides[nextSlide]);
 });
+
+function changeBgImg(arg, nextSlideSlick) {
+
+    let heroSection = document.querySelector('.hero'),
+        currentImg;
+
+    if (arg == 'change') {
+        currentImg = nextSlideSlick.querySelector('.hero__img-for-bg').dataset.src;
+
+        heroSection.style.backgroundImage = `url(${currentImg})`;
+    } else {
+        currentImg = document.querySelector('.hero__item.slick-active').querySelector('.hero__img-for-bg').dataset.src;
+
+        heroSection.style.backgroundImage = `url(${currentImg})`;
+    }
+
+    
+}
