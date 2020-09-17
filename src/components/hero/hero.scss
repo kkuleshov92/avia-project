@@ -1,10 +1,27 @@
 .hero {
-    background: url(../img/hero/hero-bg.jpg)no-repeat center center / cover;
     padding-top: 120px;
     padding-bottom: 40px;
     min-height: 735px;
     margin-top: 120px;
     position: relative;
+    transition: .3s ease;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    &_active-slide {
+        &_1 {
+            background-image: url(../img/hero/hero-bg.jpg);
+        }
+
+        &_2 {
+            background-image: url(../img/hero/hero-bg-2.jpg);
+        }
+
+        &_3 {
+            background-image: url(../img/hero/hero-bg-3.jpg);
+        }
+    }
 
     &__title {
         font-size: 65px;
