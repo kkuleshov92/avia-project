@@ -1,5 +1,9 @@
 .faq-slider {
     background: url(../img/global/sky.jpg)no-repeat top center / cover;
+    @media (min-width: 1024px) {
+        padding: 75px 0 100px;
+    }
+    
 
     &__text {
         margin-top: 40px;
