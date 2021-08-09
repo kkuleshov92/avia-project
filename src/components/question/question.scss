@@ -25,6 +25,7 @@
         padding: 25px 35px;
         margin-bottom: 25px;
         cursor: pointer;
+        box-shadow: 0 0 60px rgba(56, 69, 86, 0.1);
 
         &.is-active {
             .question {
